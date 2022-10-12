@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int Fib(int n){
+    if(n<=2){
+        return 1;
+    
+    }
+    else{
+        return Fib(n-1)+Fib(n-2);
+    }
+}  
+int main(){
+    int n;
+cout<<"Enter the position to get fibonaci series no ";
+cin>>n;
+cout<<"The fib no at position "<<n<<" is : "<<Fib(n);
+return 0;
+}
